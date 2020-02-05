@@ -27,7 +27,7 @@ public class food_items extends AppCompatActivity {
 
 
         List[] list = new List[]{
-                new List("Roti", " 297",R.drawable.ic_launcher_background),
+                new List("Roti", " 297",R.drawable.images),
 
         new List("Dal", " 104",R.drawable.ic_launcher_background),
         new List("Idli", " 5",R.drawable.ic_launcher_background),

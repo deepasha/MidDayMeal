@@ -1,6 +1,7 @@
 package com.example.middaymeal;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,11 +34,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final List list = lists.get(position);
         holder.textViewhead.setText(list.getHead());
         holder.textViewdesc.setText(list.getDesc());
-        holder.imageView.setImageResource(list.get(position).getImgId());
+        Log.i("POSITION: ", list.getImgId() + "");
+        holder.imageView.setImageResource(list.getImgId());
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
