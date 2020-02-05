@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.LinearLayout;
@@ -35,6 +37,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         final List list = lists.get(position);
         holder.textViewhead.setText(list.getHead());
         holder.textViewdesc.setText(list.getDesc());
+        holder.imageView.setImageResource(list.get(position).getImgId());
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,10 +60,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
          public TextView textViewhead;
         public TextView textViewdesc;
         public LinearLayout linearLayout;
+        public ImageView imageView;
 
 
         public ViewHolder(View itemView){
             super(itemView);
+
+            this.imageView = (ImageView) itemView.findViewById(R.id.imageview);
 
             textViewhead = (TextView) itemView.findViewById(R.id.textviewhead);
             textViewdesc = (TextView) itemView.findViewById(R.id.textviewdesc);

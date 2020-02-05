@@ -27,17 +27,17 @@ public class food_items extends AppCompatActivity {
 
 
         List[] list = new List[]{
-                new List("Roti", " 297"),
+                new List("Roti", " 297",R.drawable.ic_launcher_background),
 
-        new List("Dal", " 104"),
-        new List("Idli", " 5"),
-        new List("Dosa", " 133"),
-        new List("Chole bhature", " 427"),
-        new List("Kadhai paneer", " 248"),
-        new List("Peda", " 82"),
-        new List("Samosa", " 262"),
-        new List("Aloo parantha", " 177"),
-        new List("Poha", " 250"),
+        new List("Dal", " 104",R.drawable.ic_launcher_background),
+        new List("Idli", " 5",R.drawable.ic_launcher_background),
+        new List("Dosa", " 133",R.drawable.ic_launcher_background),
+        new List("Chole bhature", " 427", R.drawable.ic_launcher_background),
+        new List("Kadhai paneer", " 248",R.drawable.ic_launcher_background),
+        new List("Peda", " 82",R.drawable.ic_launcher_background),
+        new List("Samosa", " 262",R.drawable.ic_launcher_background),
+        new List("Aloo parantha", " 177",R.drawable.ic_launcher_background),
+        new List("Poha", " 250",R.drawable.ic_launcher_background),
 
         //   lists.add(list);
 
